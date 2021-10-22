@@ -53,6 +53,7 @@ public abstract class AppBase {
 	    public void closeTest() {
 	    	report.flush();
 	    	BrowserFactory.closeBrowser();
+	    	test.log(LogStatus.INFO, "Closing Browser");
 	    }
 	
 	
