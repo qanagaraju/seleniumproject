@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="appListeners.BaseListener"></listener>
+</listeners>
+
+<parameter name="uname" value="tester"></parameter>
+<parameter name="username" value="qatrainer"></parameter>
+<parameter name="password" value="admin123"></parameter>
+
+<parameter name="appname" value="chrome"></parameter>
+<parameter name="appurl" value="https://www.mycontactform.com/samples/basiccontact.php"></parameter>
+
+<parameter name="yourname" value="nareshit"></parameter>
+<parameter name="email" value="onlinetraining@trainer.com"></parameter>
+
+
+  <test  name="loginTest">
+    <classes>
+      <class name="com.AppTestCases.LoginTestCase"/>
+    </classes>
+  </test> <!-- login -->
+  
+  <test  name="ContactFormTest">
+    <classes>
+      <class name="com.AppTestCases.BasicContactForm"/>
+    </classes>
+  </test> <!-- login -->
+ 
+  
+  
+</suite> <!-- Suite -->

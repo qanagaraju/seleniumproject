@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="admin123"/>
+  <parameter name="uname" value="tester"/>
+  <parameter name="appname" value="chrome"/>
+  <parameter name="appurl" value="https://www.mycontactform.com/samples/basiccontact.php"/>
+  <parameter name="yourname" value="nareshit"/>
+  <parameter name="email" value="onlinetraining@trainer.com"/>
+  <parameter name="username" value="qatrainer"/>
+  <test thread-count="5" name="login(failed)">
+    <classes>
+      <class name="com.AppTestCases.LoginTestCase">
+        <methods>
+          <include name="closeTest"/>
+          <include name="setupSuite"/>
+          <include name="verifyValidloginTest"/>
+          <include name="verifyInvalidLogin"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.AppTestCases.LoginTestCase -->
+    </classes>
+  </test> <!-- login(failed) -->
+  <test thread-count="5" name="ContactForm(failed)">
+    <classes>
+      <class name="com.AppTestCases.BasicContactForm">
+        <methods>
+          <include name="verifyContactForm"/>
+          <include name="setupSuite"/>
+          <include name="launchBrowser"/>
+          <include name="closeTest"/>
+        </methods>
+      </class> <!-- com.AppTestCases.BasicContactForm -->
+    </classes>
+  </test> <!-- ContactForm(failed) -->
+</suite> <!-- Failed suite [Suite] -->
